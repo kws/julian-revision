@@ -110,7 +110,10 @@ This chapter introduces vectors as mathematical objects for modelling **position
 ### 8C.1 Definition of the Scalar (Dot) Product
 
 * Scalar product as a measure of alignment between vectors
-* Formula: $ \mathbf{a} \cdot \mathbf{b} = |\mathbf{a}| \cdot |\mathbf{b}| \cos\theta $
+* Formula:
+    $$
+    \mathbf{a} \cdot \mathbf{b} = |\mathbf{a}| \cdot |\mathbf{b}| \cos\theta
+    $$
 * Interpretation via projection
 * Applications in physics (e.g. work done)
 

@@ -50,6 +50,7 @@ This chapter introduces **differential equations** as mathematical models of cha
   * Step length $h$
 
 **Iteration formula (Euler’s Method):**
+
 $$
 \begin{aligned}
 x_{n+1} &= x_n + h \
@@ -68,9 +69,11 @@ $$
 ### 11B.1 Separation of Variables
 
 * Applicable when the equation can be written as:
-  $$
-  \frac{dy}{dx} = f(x)g(y)
-  $$
+
+$$
+\frac{dy}{dx} = f(x)g(y)
+$$
+
 * Rearrange so all $y$-terms are on one side and all $x$-terms on the other
 * Integrate both sides independently
 * Constant of integration included once
@@ -83,13 +86,17 @@ $$
 
 ### 11B.3 Homogeneous Differential Equations
 
-* Can be written in the form: $\frac{dy}{dx} = f\left(\frac{y}{x}\right)$
+* Can be written in the form:
+
+$$
+\frac{dy}{dx} = f\left(\frac{y}{x}\right)
+$$
 
 * Solved using the substitution:
 
-  $$
-  y = vx
-  $$
+$$
+y = vx
+$$
 
 * Leads to a **separable equation** in $v$ and $x$
 * Requires use of the product rule:

@@ -3,7 +3,8 @@
 # Pandoc options
 PANDOC = pandoc
 PDF_ENGINE := $(shell command -v xelatex >/dev/null 2>&1 && echo xelatex || (command -v lualatex >/dev/null 2>&1 && echo lualatex || echo pdflatex))
-OPTIONS = -F pandoc-include -F mermaid-filter \
+OPTIONS = -f markdown+tex_math_dollars+tex_math_single_backslash \
+		  -F pandoc-include -F mermaid-filter \
 		  --variable fontsize=12pt \
 		  --variable colorlinks=true \
 		  --include-in-header=header.tex \

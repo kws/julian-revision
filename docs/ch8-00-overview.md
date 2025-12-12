@@ -1,6 +1,6 @@
-## Chapter 8: Vectors — Detailed Syllabus
+# Chapter 8: Vectors — Detailed Syllabus
 
-### Overview and Purpose
+## Overview and Purpose
 
 This chapter introduces vectors as mathematical objects for modelling **position, displacement, direction, and magnitude**, and develops vector methods for solving **three-dimensional geometrical problems**. The emphasis is on linking **algebraic, geometric, and vector representations** and using vectors as a unifying language for spatial reasoning.
 

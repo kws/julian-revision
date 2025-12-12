@@ -33,6 +33,10 @@ $(BUILD_DIR)/%.tex: %.md header.tex $(DOCS_FILES) | $(BUILD_DIR)
 $(BUILD_DIR)/%.pdf: $(BUILD_DIR)/%.tex | $(BUILD_DIR)
 	xelatex -interaction=nonstopmode -halt-on-error -output-directory=$(BUILD_DIR) $<
 
+# 2) LaTeX -> HTML
+$(BUILD_DIR)/%.html: $(BUILD_DIR)/%.tex | $(BUILD_DIR)
+	pandoc -s -F pandoc-include -F mermaid-filter --mathjax -t html5 $< -o $@
+
 $(BUILD_DIR)/%.txt: $(BUILD_DIR)/%.pdf
 	pdftotext $< $@
 

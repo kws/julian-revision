@@ -1,4 +1,4 @@
-## 8A. Introduction to Vectors — Key Points in Detail
+# 8A. Introduction to Vectors — Key Points in Detail
 
 ---
 

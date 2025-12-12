@@ -16,6 +16,10 @@ geometry: margin=1in
 
 \newpage
 
+!include`incrementSection=1` docs/ch8-02-vectors-and-geometry.md
+
+\newpage
+
 !include`incrementSection=1` docs/ch8-03-scalar-product-and-angles.md
 
 \newpage

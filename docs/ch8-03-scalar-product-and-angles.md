@@ -1,4 +1,4 @@
-## 8C. Scalar Product and Angles — Key Points in Detail
+# 8C. Scalar Product and Angles — Key Points in Detail
 
 ---
 
@@ -10,7 +10,7 @@ The scalar product provides a way of **multiplying two vectors to obtain a scala
 
 ### Definition
 
-For two vectors **a** and **b** with angle ( \theta ) between them:
+For two vectors **a** and **b** with angle ( $\theta$ ) between them:
 $$
 \mathbf{a} \cdot \mathbf{b} = |\mathbf{a}|,|\mathbf{b}| \cos\theta
 $$

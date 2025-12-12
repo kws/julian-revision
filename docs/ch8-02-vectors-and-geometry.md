@@ -1,4 +1,4 @@
-## 8B. Vectors and Geometry — Key Points in Detail
+# 8B Vectors and Geometry — Key Points in Detail
 
 ---
 
@@ -11,9 +11,9 @@ Vectors can represent the **position of points in space**, not just directions o
 ### Definition
 
 * The **position vector** of a point ( A ) is the vector:
-  [
+  $$
   \mathbf{a} = \overrightarrow{OA}
-  ]
+  $$
   where ( O ) is the origin.
 
 ### Key Properties
@@ -39,9 +39,9 @@ Vectors can represent **movement between points**, not just position.
 ### Definition
 
 If points ( A ) and ( B ) have position vectors ( $\mathbf{a}$ ) and ( $\mathbf{b}$ ), then:
-[
+$$
 \overrightarrow{AB} = \mathbf{b} - \mathbf{a}
-]
+$$
 
 ### Interpretation
 
@@ -71,9 +71,9 @@ Distance is the **length of a displacement vector**.
 ### Formula
 
 The distance between points ( A ) and ( B ) is:
-[
+$$
 AB = |\overrightarrow{AB}| = |\mathbf{b} - \mathbf{a}|
-]
+$$
 
 ### Key Observations
 
@@ -104,9 +104,9 @@ Vectors allow geometric properties to be **proved algebraically**, without diagr
 #### Key Condition
 
 A quadrilateral ( ABCD ) is a parallelogram if:
-[
+$$
 \overrightarrow{AB} = \overrightarrow{DC}
-]
+$$
 
 This automatically implies:
 
@@ -120,9 +120,9 @@ This automatically implies:
 #### Additional Condition
 
 A parallelogram is a rhombus if:
-[
+$$
 |\overrightarrow{AB}| = |\overrightarrow{BC}|
-]
+$$
 
 ### Conceptual Benefit
 
@@ -144,10 +144,10 @@ Points lie on a straight line if the vectors between them are **parallel**.
 ### Condition
 
 Points ( A ), ( B ), and ( C ) are collinear if:
-[
+$$
 \overrightarrow{AB} = k,\overrightarrow{BC}
 \quad \text{for some scalar } k
-]
+$$
 
 ### Practical Use
 
@@ -168,9 +168,9 @@ Collinearity becomes an **algebraic parallelism test**, not a visual one.
 #### Key Result
 
 If points ( A ) and ( B ) have position vectors ( $\mathbf{a}$ ) and ( $\mathbf{b}$ ), the midpoint has position vector:
-[
+$$
 \frac{1}{2}(\mathbf{a} + \mathbf{b})
-]
+$$
 
 ### Why This Works
 

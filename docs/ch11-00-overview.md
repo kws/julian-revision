@@ -83,11 +83,7 @@ $$
 
 ### 11B.3 Homogeneous Differential Equations
 
-* Can be written in the form:
-
-  $$
-  \frac{dy}{dx} = f\left(\frac{y}{x}\right)
-  $$
+* Can be written in the form: $\frac{dy}{dx} = f\left(\frac{y}{x}\right)$
 
 * Solved using the substitution:
 
@@ -98,9 +94,9 @@ $$
 * Leads to a **separable equation** in $v$ and $x$
 * Requires use of the product rule:
 
-  $$
-  \frac{dy}{dx} = v + x\frac{dv}{dx}
-  $$
+$$
+\frac{dy}{dx} = v + x\frac{dv}{dx}
+$$
 
 ### 11B.4 Modelling with Differential Equations
 

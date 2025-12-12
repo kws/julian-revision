@@ -1,0 +1,83 @@
+\usepackage{fontspec}
+\usepackage{unicode-math}
+
+\usepackage{titlesec}
+\usepackage{newunicodechar}
+\usepackage{amssymb}  % Provides symbols like \checkmark
+\usepackage{mdframed}
+\usepackage{pdflscape}
+\usepackage{longtable}
+\usepackage{xcolor} % For alternating row colors
+\usepackage{colortbl} % For table color support
+\usepackage{booktabs}
+
+% Main text fonts
+\setmainfont{STIX Two Text}
+\setsansfont{STIX Two Text}
+\setmonofont{Menlo}
+
+% Math font
+\setmathfont{STIX Two Math}
+
+% Map Unicode characters to LaTeX commands
+\newunicodechar{✅}{\ensuremath{\checkmark}}
+\newunicodechar{❌}{\ensuremath{\times}}
+\newunicodechar{→}{\ensuremath{\rightarrow}}
+\newunicodechar{↔}{\ensuremath{\longleftrightarrow}}
+
+% Slightly increased line spacing (helps dyslexic readers)
+\usepackage{setspace}
+\onehalfspacing
+
+% Better paragraph spacing (less visual crowding)
+\setlength{\parskip}{0.6em}
+\setlength{\parindent}{0pt}
+
+\usepackage{fancyhdr}
+
+\makeatletter
+\renewcommand{\sectionmark}[1]{\markboth{#1}{}}
+\renewcommand{\subsectionmark}[1]{\markright{#1}}
+\renewcommand{\subsubsectionmark}[1]{\markright{#1}}
+% \renewcommand{\paragraphmark}[1]{\markright{#1}}
+\makeatother
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyhead[L]{\nouppercase{\leftmark}}
+\fancyhead[R]{\nouppercase{\rightmark}}
+\fancyfoot[C]{Page \thepage}
+
+
+% Distinct heading hierarchy (Pandoc maps ### -> \subsubsection)
+\titleformat{\section}
+  {\normalfont\Large\bfseries}{\thesection}{1em}{}
+
+\titleformat{\subsection}
+  {\normalfont\large\bfseries}{\thesubsection}{1em}{}
+
+\titleformat{\subsubsection}
+  {\normalfont\large\bfseries}{\thesubsubsection}{1em}{}
+
+\titleformat{\paragraph}
+  {\normalfont\normalsize\bfseries}{}{0pt}{}
+
+
+\newmdenv[
+  linecolor=black,
+  backgroundcolor=yellow!20,
+  roundcorner=10pt,
+  linewidth=1pt,
+  innertopmargin=10pt,
+  innerbottommargin=10pt,
+  innerleftmargin=10pt,
+  innerrightmargin=10pt,
+  skipabove=15pt,
+  skipbelow=15pt
+]{highlightbox}
+
+\newcommand{\todo}{
+  \begin{highlightbox}
+    TODO: Complete section
+  \end{highlightbox}
+}
